@@ -2,11 +2,12 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ingress-service
+  namespace: todo-pub
   annotations:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:
-  - host: todo.com
+  - host: todo.pub.com
     http:
       paths:
       - pathType: Prefix
