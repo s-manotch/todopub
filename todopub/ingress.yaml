@@ -24,10 +24,10 @@ spec:
             name: client-service
             port: 
               number: 80
-      - pathType: Prefix
-        path: /config
-        backend:
-          service:
-            name: todo-config
-            port: 
-              number: 80
+      # - pathType: Prefix
+      #   path: /config
+      #   backend:
+      #     service:
+      #       name: todo-config
+      #       port: 
+      #         number: 80
